@@ -1,0 +1,16 @@
+# Cloudflare Workers Configuration
+# Update the values below before deploying
+
+name = "url-shortener"  # Change to your project name
+main = "worker-multiuser.js"
+compatibility_date = "2024-01-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "url-shortener"  # Change to match your D1 database name
+database_id = "YOUR_DATABASE_ID"  # Replace with your D1 database ID from Cloudflare dashboard
+
+# Optional: Custom domain route
+# [routes]
+# pattern = "links.yourdomain.com/*"
+# custom_domain = true
